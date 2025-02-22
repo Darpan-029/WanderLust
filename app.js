@@ -70,8 +70,8 @@ const sessionOptios = {
 //   res.send("Hi, I am root");
 // });
 
-app.use(flash());
 app.use(session(sessionOptios));
+app.use(flash());
 
 app.use(passport.initialize());
 app.use(passport.session());
